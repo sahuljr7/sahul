@@ -1,0 +1,97 @@
+<!--
+MIT License
+
+Copyright (c) 2022 Sahul Kumar Parida
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sahul Kumar Parida</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <video autoplay muted loop playsinline>
+      <source src="./images//bg1.webm" type="video/webm; codecs=vp9">
+    </video>
+    <main>
+      <header>
+      <!--
+        <button id="btn" onClick="audio.play();">Play music</button>
+        <button id="btn" onClick="audio.pause();">Stop music</button>
+    <script type="text/javascript">
+      const audio = new Audio();
+      audio.src = "./images/space.mp3"
+    </script>
+    -->
+    
+    <script>
+      function playSound(sound) {
+        var song1 = document.getElementById(sound);
+        song1.volume = .25; // setting the volume to 25% because the sound is loud
+        if (song1.paused) {  // if song1 is paused
+          song1.play();
+        } else {
+          song1.pause();
+        }
+      }
+    </script>
+
+      <audio id="sound">
+        <source src="./images/space.mp3" type="audio/mp3">
+      </audio>
+      <button onclick="playSound('sound')">Play/Pause</button>
+
+        <h1>@sahuljr7</h1>
+      </header>
+      <ul>
+        <li>
+          <a href="https://sahuljr7.github.io/The-Space-Travel/" target="_blank">
+            <img src="./images/spacetravel.svg" alt="Portfolio" width="20" />
+            Space Travel
+          </a>
+        </li>
+
+        <li>
+          <a href="https://sahuljr7.github.io/Test-4/" target="_blank">
+            <img src="./images/future.svg" alt="Portfolio" width="20" />
+            Go to the Future
+          </a>
+        </li>
+
+        <li>
+          <a href="https://sahuljr7.github.io/The-ThreeJS/" target="_blank">
+            <img src="./images/three.svg" alt="Portfolio" width="20" />
+            Three.JS
+          </a>
+        </li>
+
+        <li>
+          <a href="https://sahuljr7.github.io/My-ThreeJS-Projects/" target="_blank">
+            <img src="./images/three1.svg" alt="Portfolio" width="20" />
+            My Three.JS Projects
+          </a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
